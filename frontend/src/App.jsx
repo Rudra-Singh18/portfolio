@@ -164,10 +164,11 @@ function HomePage() {
             </div>
 
             <div className="hero-actions">
-              <a className="button primary" href="#work">See projects</a>
-              <Link className="button secondary" to="/certificates">View Credentials</Link>
-              <a className="button secondary" href="/Rudra_Pratap_Singh_Resume.pdf" download>Download Resume</a>
-            </div>  
+            <a className="button primary" href="#work">See projects</a>
+            <Link className="button secondary" to="/certificates">View Credentials</Link>
+            {/* Changed target to _blank and removed the download attribute */}
+            <a className="button secondary" href="/Rudra_Pratap_Singh_Resume.pdf" target="_blank" rel="noreferrer">See Resume</a>
+            </div>
           </div>
 
           <div className="hero-card profile-card">
@@ -196,9 +197,10 @@ function HomePage() {
             <h2>Crafting reliable, modern software with a clear sense of purpose.</h2>
           </div>
           <p className="section-copy">
-            I bring a strong foundation in Python, JavaScript, SAP ABAP, and Git/GitHub into every project I work on.
-            My interest lies in building software that is both technically solid and genuinely useful — from backend services
-            to intelligent applications that solve real-world problems.
+            I'm Rudra Pratap Singh, a Computer Science undergraduate passionate about Software Engineering, 
+            Artificial Intelligence, Full-Stack Development, and SAP Technologies. 
+            I enjoy building intelligent, scalable applications that solve real-world problems and continuously 
+            learning emerging technologies to create impactful digital solutions.
           </p>
           <div className="skills-grid">
             {skillGroups.map((group) => (
